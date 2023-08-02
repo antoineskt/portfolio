@@ -1,18 +1,27 @@
 // eslint-disable-next-line import/no-named-as-default
 import styled from 'styled-components'
 import { ReactComponent as Logoab } from '../../assets/logoab.svg'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { ThemeContext } from '../../utils/context'
 
 export default function Header() {
   const [visible, setVisible] = useState(false)
+  const { toggleTheme, theme } = useContext(ThemeContext)
 
   const HeaderDiv = styled.header`
     display: flex;
     height: 60px;
     width: 100%;
+    padding: 0 30px;
     justify-content: space-between;
     align-items: center;
     background-color: white;
+  `
+
+  const NightModeButton = styled.button`
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   `
 
   const Nav = styled.nav`
@@ -31,8 +40,8 @@ export default function Header() {
 
   const DivLogo = styled.div`
     > * {
-      height: 5em;
-      width: 5em;
+      height: 3em;
+      width: 3em;
     }
   `
 
@@ -60,6 +69,9 @@ export default function Header() {
       <DivLogo>
         <Logoab />
       </DivLogo>
+      <NightModeButton onClick={() => toggleTheme()}>
+        Changer de mode : {theme === 'light' ? '☀️' : '🌙'}
+      </NightModeButton>
       <Button onClick={() => setVisible(true)}>
         <svg
           stroke="currentColor"

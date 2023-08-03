@@ -5,7 +5,7 @@ import { ThemeContext } from '../context'
 const StyledGlobalStyle = createGlobalStyle<{ isDarkMode: boolean }>`
     * {
         box-sizing: border-box;
-      font-family: 'Trebuchet MS', Helvetica, sans-serif;
+      
       margin: 0;
     }
 
@@ -14,7 +14,7 @@ const StyledGlobalStyle = createGlobalStyle<{ isDarkMode: boolean }>`
         //background-color: $ { ({ props }) => (props.isDarkmode ?  qsdjqkdsq : qsdjqkldq)
         
         background-color: ${({ isDarkMode }) => (isDarkMode ? '#2F2E41' : 'white')};
-       
+        font-family: "Lato", sans-serif;
     }
 
     

@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client'
 import Home from './Home'
 import Error from './components/Error'
 import GlobalStyle from './utils/style/GlobalStyle'
+import { ThemeProvider } from './utils/context'
 
 const container = document.getElementById('root')
 const root = createRoot(container!)
@@ -11,12 +12,14 @@ const root = createRoot(container!)
 root.render(
   <React.StrictMode>
     <Router>
-      <GlobalStyle />
-      <Routes>
-        <Route path="/" element={<Home />} />
+      <ThemeProvider>
+        <GlobalStyle />
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-        <Route path="*" element={<Error />} />
-      </Routes>
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </ThemeProvider>
     </Router>
   </React.StrictMode>,
 )

@@ -4,65 +4,65 @@ import { ReactComponent as Logoab } from '../../assets/logoab.svg'
 import { useState, useContext } from 'react'
 import { ThemeContext } from '../../utils/context'
 
+const HeaderDiv = styled.header`
+  display: flex;
+  height: 60px;
+  width: 100%;
+  padding: 0 30px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+`
+
+const NightModeButton = styled.button`
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+`
+
+const Nav = styled.nav<{ $visible: boolean }>`
+  visibility: ${({ $visible }) => ($visible === true ? 'visible' : 'hidden')};
+  position: fixed;
+  width: 300px;
+  background: red;
+  right: 0;
+  top: 0;
+  margin: 0;
+  height: 100%;
+  background-color: white;
+  transform: ${({ $visible }) => ($visible === true ? 'translateX(0%);' : 'translateX(105%);')};
+  transition: transform 1s;
+`
+
+const DivLogo = styled.div`
+  > * {
+    height: 3em;
+    width: 3em;
+  }
+`
+
+const Button = styled.button`
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+`
+
+const DivUl = styled.div`
+  justify-content: space-between;
+  height: calc(100% - 64px);
+  padding: 32px 0;
+`
+
+const Ul = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+`
+
 export default function Header() {
-  const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = useState<boolean>(false)
   const { toggleTheme, theme } = useContext(ThemeContext)
-
-  const HeaderDiv = styled.header`
-    display: flex;
-    height: 60px;
-    width: 100%;
-    padding: 0 30px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-  `
-
-  const NightModeButton = styled.button`
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  `
-
-  const Nav = styled.nav`
-    visibility: ${visible === true ? 'visible' : 'hidden'};
-    position: fixed;
-    width: 300px;
-    background: red;
-    right: 0;
-    top: 0;
-    margin: 0;
-    height: 100%;
-    background-color: white;
-    transform: ${visible === true ? 'translateX(0%);' : 'translateX(105%);'};
-    transition: transform 1s;
-  `
-
-  const DivLogo = styled.div`
-    > * {
-      height: 3em;
-      width: 3em;
-    }
-  `
-
-  const Button = styled.button`
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-  `
-
-  const DivUl = styled.div`
-    justify-content: space-between;
-    height: calc(100% - 64px);
-    padding: 32px 0;
-  `
-
-  const Ul = styled.ul`
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  `
 
   return (
     <HeaderDiv>
@@ -89,7 +89,7 @@ export default function Header() {
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
       </Button>
-      <Nav>
+      <Nav $visible={visible}>
         <div>
           <Button onClick={() => setVisible(false)}>
             <svg
@@ -110,7 +110,7 @@ export default function Header() {
         </div>
         <DivUl>
           <Ul>
-            <li>Home</li>
+            <li>Homeee</li>
             <li>About</li>
             <li>Projects</li>
             <li>Contact</li>

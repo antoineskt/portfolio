@@ -2,23 +2,27 @@
 /* eslint-disable react/no-unescaped-entities */
 import styled from 'styled-components'
 
-const SectionPresentation = styled.section``
+const SectionPresentation = styled.section`
+  margin-left: 70px;
+  margin-top: 120px;
+  margin-bottom: 20px;
+`
 
 const H1 = styled.h1`
   font-family: 'Playfair Display';
-  line-height: 4rem;
-  font-size: 4rem;
+  line-height: 5rem;
+  font-size: 5rem;
 `
 
 const H2 = styled.h2`
-  font-size: 1.6rem;
+  font-size: 2rem;
   letter-spacing: 1px;
 `
 
 const P = styled.p`
   max-width: 450px;
   word-break: break-word;
-  font-size: 1em;
+  font-size: 1.2em;
   margin-top: 16px;
   margin-bottom: 32px;
 `

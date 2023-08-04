@@ -43,6 +43,9 @@ const DivPropos = styled.div`
   margin: 0 70px;
   width: 400px;
   box-shadow: 10px 10px teal;
+  &:hover {
+    background-color: #f7f7f7;
+  }
 `
 
 const Img = styled.img`

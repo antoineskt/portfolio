@@ -1,7 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 // eslint-disable-next-line import/no-named-as-default
 import styled from 'styled-components'
-import flowscreen from './Images/flowscreen.png'
+import flowScreenOk from './Images/FlowScreenOk.png'
+import agendascreen from './Images/agendascreen.png'
+import books from './Images/books.png'
+import illuvium from './Images/illuvium.png'
 
 const SectionProject = styled.section`
   background-color: white;
@@ -81,9 +84,9 @@ export default function Project() {
         <DivOneProject>
           <A href="https://github.com/antoineskt/Weekly-Agenda.git">
             <DivImageProject>
-              <Img src={flowscreen} alt="agenda" />
+              <Img src={agendascreen} alt="agenda" />
               <DivInsightProject>
-                <h2>Flow</h2>
+                <h2>Agenda</h2>
                 <div>Agenda de semaine en temps réel pour suivre ses objectifs simplement</div>
               </DivInsightProject>
             </DivImageProject>
@@ -100,12 +103,12 @@ export default function Project() {
         <DivOneProject>
           <A href="https://github.com/antoineskt/Application-mobile-en-ReactNative">
             <DivImageProject>
-              <Img src={flowscreen} alt="agenda" />
+              <Img src={flowScreenOk} alt="agenda" />
               <DivInsightProject>
-                <h2>Habit tracker</h2>
+                <h2>Habit Tracker</h2>
                 <div>
                   Application mobile en React Native. L'app permet de s'identifier et de suivre ses objectifs en temps
-                  reéel
+                  reél
                 </div>
               </DivInsightProject>
             </DivImageProject>
@@ -118,25 +121,46 @@ export default function Project() {
             <Span>Express</Span>
             <Span>Sequelize</Span>
             <Span>MySQL</Span>
+            <Span>Figma</Span>
           </DivUnderImage>
         </DivOneProject>
 
         <DivOneProject>
-          <A href="https://github.com/antoineskt/Weekly-Agenda.git">
+          <A href="https://github.com/antoineskt/Booksearch">
             <DivImageProject>
-              <Img src={flowscreen} alt="agenda" />
+              <Img src={books} alt="books" />
               <DivInsightProject>
-                <h2>Flow</h2>
-                <div>Agenda de semaine en temps réel pour suivre ses objectifs simplement</div>
+                <h2>BookSearch</h2>
+                <div>Utilisation d'une API de recherche de livre</div>
               </DivInsightProject>
             </DivImageProject>
           </A>
           <DivUnderImage>
-            <a href="https://github.com/antoineskt/Weekly-Agenda.git">
+            <a href="https://github.com/antoineskt/Booksearch">
               <Span>Github</Span>
             </a>
-            <Span>React</Span>
-            <Span>Styled Components</Span>
+            <Span>JavaScript</Span>
+            <Span>Html Css</Span>
+            <Span>API</Span>
+          </DivUnderImage>
+        </DivOneProject>
+
+        <DivOneProject>
+          <A href="https://github.com/antoineskt/illuvium">
+            <DivImageProject>
+              <Img src={illuvium} alt="books" />
+              <DivInsightProject>
+                <h2>Maquette</h2>
+                <div>Reproduction simple d'une page vitrine d'un site en html css</div>
+              </DivInsightProject>
+            </DivImageProject>
+          </A>
+          <DivUnderImage>
+            <a href="https://github.com/antoineskt/illuvium">
+              <Span>Github</Span>
+            </a>
+            <Span>HTML</Span>
+            <Span>CSS</Span>
           </DivUnderImage>
         </DivOneProject>
       </DivAllProject>

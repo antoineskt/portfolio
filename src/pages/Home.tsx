@@ -3,6 +3,8 @@ import Presentation from '../components/Presentation'
 import Apropos from '../components/Apropos'
 import Service from '../components/Service'
 import Project from '../components/Projects'
+import Contact from '../components/Contact'
+import Competence from '../components/Competence'
 function Home() {
   return (
     <div>
@@ -11,6 +13,8 @@ function Home() {
       <Apropos />
       <Service />
       <Project />
+      <Competence />
+      <Contact />
     </div>
   )
 }

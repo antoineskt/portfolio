@@ -80,7 +80,7 @@ export default function Apropos() {
 
           <H2>Application mobile & Shopify</H2>
           <P>
-            Je code également des applications mobile en React native et des application webs et thème/site sur Shopify.
+            Je code également des applications mobile en React native et des application web et thème/site sur Shopify.
           </P>
         </DivPropos>
       </Div>

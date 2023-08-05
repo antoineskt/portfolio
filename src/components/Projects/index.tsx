@@ -98,21 +98,26 @@ export default function Project() {
         </DivOneProject>
 
         <DivOneProject>
-          <A href="https://github.com/antoineskt/Weekly-Agenda.git">
+          <A href="https://github.com/antoineskt/Application-mobile-en-ReactNative">
             <DivImageProject>
               <Img src={flowscreen} alt="agenda" />
               <DivInsightProject>
-                <h2>Flow</h2>
-                <div>Agenda de semaine en temps réel pour suivre ses objectifs simplement</div>
+                <h2>Habit tracker</h2>
+                <div>
+                  Application mobile en React Native. L'app permet de s'identifier et de suivre ses objectifs en temps
+                  reéel
+                </div>
               </DivInsightProject>
             </DivImageProject>
           </A>
           <DivUnderImage>
-            <a href="https://github.com/antoineskt/Weekly-Agenda.git">
+            <a href="https://github.com/antoineskt/Application-mobile-en-ReactNative">
               <Span>Github</Span>
             </a>
-            <Span>React</Span>
-            <Span>Styled Components</Span>
+            <Span>React Native</Span>
+            <Span>Express</Span>
+            <Span>Sequelize</Span>
+            <Span>MySQL</Span>
           </DivUnderImage>
         </DivOneProject>
 

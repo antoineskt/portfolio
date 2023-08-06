@@ -82,7 +82,7 @@ export default function Project() {
       <H1>Mes projects</H1>
       <DivAllProject>
         <DivOneProject>
-          <A href="https://github.com/antoineskt/Weekly-Agenda.git">
+          <A target="_blank" href="https://github.com/antoineskt/Weekly-Agenda.git">
             <DivImageProject>
               <Img src={agendascreen} alt="agenda" />
               <DivInsightProject>
@@ -92,7 +92,7 @@ export default function Project() {
             </DivImageProject>
           </A>
           <DivUnderImage>
-            <a href="https://github.com/antoineskt/Weekly-Agenda.git">
+            <a target="_blank" href="https://github.com/antoineskt/Weekly-Agenda.git" rel="noreferrer">
               <Span>Github</Span>
             </a>
             <Span>React</Span>
@@ -101,7 +101,7 @@ export default function Project() {
         </DivOneProject>
 
         <DivOneProject>
-          <A href="https://github.com/antoineskt/Application-mobile-en-ReactNative">
+          <A target="_blank" href="https://github.com/antoineskt/Application-mobile-en-ReactNative">
             <DivImageProject>
               <Img src={flowScreenOk} alt="agenda" />
               <DivInsightProject>
@@ -114,7 +114,7 @@ export default function Project() {
             </DivImageProject>
           </A>
           <DivUnderImage>
-            <a href="https://github.com/antoineskt/Application-mobile-en-ReactNative">
+            <a target="_blank" href="https://github.com/antoineskt/Application-mobile-en-ReactNative" rel="noreferrer">
               <Span>Github</Span>
             </a>
             <Span>React Native</Span>
@@ -126,7 +126,7 @@ export default function Project() {
         </DivOneProject>
 
         <DivOneProject>
-          <A href="https://github.com/antoineskt/Booksearch">
+          <A target="_blank" href="https://github.com/antoineskt/Booksearch">
             <DivImageProject>
               <Img src={books} alt="books" />
               <DivInsightProject>
@@ -136,7 +136,7 @@ export default function Project() {
             </DivImageProject>
           </A>
           <DivUnderImage>
-            <a href="https://github.com/antoineskt/Booksearch">
+            <a target="_blank" href="https://github.com/antoineskt/Booksearch" rel="noreferrer">
               <Span>Github</Span>
             </a>
             <Span>JavaScript</Span>
@@ -146,7 +146,7 @@ export default function Project() {
         </DivOneProject>
 
         <DivOneProject>
-          <A href="https://github.com/antoineskt/illuvium">
+          <A target="_blank" href="https://github.com/antoineskt/illuvium">
             <DivImageProject>
               <Img src={illuvium} alt="books" />
               <DivInsightProject>
@@ -156,7 +156,7 @@ export default function Project() {
             </DivImageProject>
           </A>
           <DivUnderImage>
-            <a href="https://github.com/antoineskt/illuvium">
+            <a target="_blank" href="https://github.com/antoineskt/illuvium" rel="noreferrer">
               <Span>Github</Span>
             </a>
             <Span>HTML</Span>

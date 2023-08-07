@@ -5,6 +5,23 @@ import { useState, useContext } from 'react'
 import { ThemeContext } from '../../utils/context'
 import { sun, moon } from '../../assets/lights'
 
+const DivHeaderAndMenuOverlay = styled.div`
+  z-index: 10;
+  top: 0;
+`
+
+const DivMenuOverlay = styled.div<{ $visible: boolean }>`
+  display: ${({ $visible }) => ($visible === true ? 'block' : 'none')};
+  opacity: ${({ $visible }) => ($visible === true ? '1' : '0')};
+  position: fixed;
+  height: 120vh;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 4;
+  top: 0;
+  left: 0;
+  right: 0;
+`
+
 const HeaderDiv = styled.header`
   display: flex;
   height: 60px;
@@ -46,50 +63,55 @@ const Nav = styled.nav<{ $visible: boolean }>`
   background-color: white;
   transform: ${({ $visible }) => ($visible === true ? 'translateX(0%);' : 'translateX(105%);')};
   transition: transform 1s;
+  z-index: 10;
+`
+
+const ButtonMenuBurgerClose = styled.div`
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+`
+const DivButtonCloseMenu = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
 `
 const DivUl = styled.div`
-  justify-content: space-between;
-  height: calc(100% - 64px);
-  padding: 32px 0;
+  z-index: 10;
 `
 const Ul = styled.ul`
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5em;
+`
+
+const A = styled.a`
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: red;
+  }
 `
 export default function Header() {
   const [visible, setVisible] = useState<boolean>(false)
   const { toggleTheme, theme } = useContext(ThemeContext)
 
   return (
-    <HeaderDiv>
-      <DivLogo>
-        <Logoab />
-      </DivLogo>
-      <ul>
-        <ButtonDarkTheme onClick={() => toggleTheme()}>{theme === 'light' ? moon : sun}</ButtonDarkTheme>
-        <ButtonMenuBurger onClick={() => setVisible(true)}>
-          <svg
-            stroke="currentColor"
-            fill="none"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            height="28"
-            width="28"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </ButtonMenuBurger>
-      </ul>
-
-      <Nav $visible={visible}>
-        <div>
-          <ButtonMenuBurger onClick={() => setVisible(false)}>
+    <DivHeaderAndMenuOverlay>
+      <HeaderDiv>
+        <DivLogo>
+          <Logoab />
+        </DivLogo>
+        <ul>
+          <ButtonDarkTheme onClick={() => toggleTheme()}>{theme === 'light' ? moon : sun}</ButtonDarkTheme>
+          <ButtonMenuBurger onClick={() => setVisible(true)}>
             <svg
               stroke="currentColor"
               fill="none"
@@ -101,20 +123,57 @@ export default function Header() {
               width="28"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
             </svg>
           </ButtonMenuBurger>
-        </div>
-        <DivUl>
-          <Ul>
-            <li>Homeee</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-          </Ul>
-        </DivUl>
-      </Nav>
-    </HeaderDiv>
+        </ul>
+
+        <Nav $visible={visible}>
+          <DivButtonCloseMenu>
+            <ButtonMenuBurgerClose onClick={() => setVisible(false)}>
+              <svg
+                stroke="currentColor"
+                fill="none"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                height="28"
+                width="28"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </ButtonMenuBurgerClose>
+          </DivButtonCloseMenu>
+          <DivUl>
+            <Ul>
+              <li>
+                <A href="#home">Home</A>
+              </li>
+              <li>
+                <A href="#apropos">About</A>
+              </li>
+              <li>
+                <A href="#services">Services</A>
+              </li>
+              <li>
+                <A href="#projets">Projets</A>
+              </li>
+              <li>
+                <A href="#competence">Compétences</A>
+              </li>
+              <li>
+                <A href="#contact">Contact</A>
+              </li>
+            </Ul>
+          </DivUl>
+        </Nav>
+      </HeaderDiv>
+      <DivMenuOverlay $visible={visible}></DivMenuOverlay>
+    </DivHeaderAndMenuOverlay>
   )
 }

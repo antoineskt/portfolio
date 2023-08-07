@@ -40,7 +40,7 @@ const DivSvgTitle = styled.div`
 `
 export default function Competence() {
   return (
-    <SectionCompetence>
+    <SectionCompetence id="competences">
       <H1>Mes compétences</H1>
 
       <DivCompetences>

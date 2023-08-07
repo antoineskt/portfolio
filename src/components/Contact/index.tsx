@@ -18,7 +18,7 @@ const A = styled.a`
 `
 export default function Contact() {
   return (
-    <SectionContact>
+    <SectionContact id="contact">
       <H1>Contact</H1>
       <div>
         <A target="_blank" href="https://github.com/antoineskt">

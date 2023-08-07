@@ -78,7 +78,7 @@ const Span = styled.span`
 
 export default function Project() {
   return (
-    <SectionProject>
+    <SectionProject id="projets">
       <H1>Mes projects</H1>
       <DivAllProject>
         <DivOneProject>

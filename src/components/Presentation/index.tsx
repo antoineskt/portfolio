@@ -56,7 +56,7 @@ const AncreGit = styled.a`
 `
 export default function Presentation() {
   return (
-    <SectionPresentation>
+    <SectionPresentation id="home">
       <H1>
         Antoine
         <br /> Billet

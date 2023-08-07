@@ -59,7 +59,7 @@ const P = styled.p`
 `
 export default function Apropos() {
   return (
-    <SectionApropos>
+    <SectionApropos id="apropos">
       <H1>À propos de moi</H1>
 
       <Div>

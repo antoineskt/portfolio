@@ -44,7 +44,7 @@ const Img = styled.img`
 
 export default function Service() {
   return (
-    <SectionService>
+    <SectionService id="services">
       <H1>Mes services</H1>
       <DivThreeBox>
         <DivOneBloc>

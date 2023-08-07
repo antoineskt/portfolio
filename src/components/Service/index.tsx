@@ -9,6 +9,9 @@ const SectionService = styled.section`
   background-color: f7f7f7;
   margin-top: 70px;
   margin-left: 70px;
+  @media (max-width: 768px) {
+    margin-left: 20px;
+  }
 `
 const H1 = styled.h1`
   font-size: 3em;
@@ -21,6 +24,10 @@ const H2 = styled.h2`
 const DivThreeBox = styled.div`
   display: flex;
   justify-content: space-around;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: none;
+  }
 `
 
 const DivOneBloc = styled.div`

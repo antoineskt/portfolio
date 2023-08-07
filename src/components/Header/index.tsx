@@ -64,6 +64,9 @@ const Nav = styled.nav<{ $visible: boolean }>`
   transform: ${({ $visible }) => ($visible === true ? 'translateX(0%);' : 'translateX(105%);')};
   transition: transform 1s;
   z-index: 10;
+  @media (max-width: 768px) {
+    overflow: hidden;
+  }
 `
 
 const ButtonMenuBurgerClose = styled.div`
@@ -77,6 +80,9 @@ const DivButtonCloseMenu = styled.div`
   display: flex;
   justify-content: flex-end;
   padding: 15px;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `
 const DivUl = styled.div`
   z-index: 10;

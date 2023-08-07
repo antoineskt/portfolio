@@ -22,11 +22,17 @@ const H2 = styled.h2`
 
 const DivCompetences = styled.div`
   margin-left: 70px;
+  @media (max-width: 768px) {
+    margin-left: 20px;
+  }
 `
 
 const DivAllSvgTitle = styled.div`
   display: flex;
   padding-bottom: 50px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 const DivSvgTitle = styled.div`
@@ -36,6 +42,9 @@ const DivSvgTitle = styled.div`
   padding-left: 20px;
   &:hover {
     text-decoration: underline;
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
   }
 `
 export default function Competence() {

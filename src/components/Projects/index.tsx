@@ -17,10 +17,16 @@ const H1 = styled.h1`
   font-size: 3em;
   margin-left: 70px;
   margin-bottom: 50px;
+  @media (max-width: 768px) {
+    margin-left: 20px;
+  }
 `
 
 const DivAllProject = styled.div`
   margin-left: 70px;
+  @media (max-width: 768px) {
+    margin-left: 20px;
+  }
 `
 
 const DivOneProject = styled.div`
@@ -41,6 +47,11 @@ const DivImageProject = styled.div`
   border-radius: 10px;
 
   overflow: hidden;
+  @media (max-width: 768px) {
+    width: 335px;
+    height: 230px;
+    background-color: black;
+  }
 `
 
 const Img = styled.img`
@@ -55,6 +66,12 @@ const Img = styled.img`
     transform: scale(1.05);
     border: 4px solid #5dfff2;
   }
+  @media (max-width: 768px) {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border: none;
+  }
 `
 
 const DivInsightProject = styled.div`
@@ -63,9 +80,18 @@ const DivInsightProject = styled.div`
   bottom: 0;
   color: white;
   font-size: 1.2em;
+  @media (max-width: 768px) {
+    font-size: 0.75em;
+  }
 `
 
-const DivUnderImage = styled.div``
+const DivUnderImage = styled.div`
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+`
 
 const Span = styled.span`
   background-color: black;
@@ -74,6 +100,9 @@ const Span = styled.span`
   padding: 7px 13px;
   margin-right: 10px;
   box-shadow: 0 1px 1px 1px hotpink;
+  @media (max-width: 768px) {
+    font-size: 0.7rem;
+  }
 `
 
 export default function Project() {

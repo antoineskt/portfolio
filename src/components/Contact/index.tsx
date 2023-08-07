@@ -12,7 +12,11 @@ const H1 = styled.h1`
   font-size: 2.5em;
   margin-bottom: 20px;
 `
-
+const Div = styled.div`
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`
 const A = styled.a`
   margin: 0 20px;
 `
@@ -20,7 +24,7 @@ export default function Contact() {
   return (
     <SectionContact id="contact">
       <H1>Contact</H1>
-      <div>
+      <Div>
         <A target="_blank" href="https://github.com/antoineskt">
           <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -46,7 +50,7 @@ export default function Contact() {
             ></path>
           </svg>
         </A>
-      </div>
+      </Div>
     </SectionContact>
   )
 }

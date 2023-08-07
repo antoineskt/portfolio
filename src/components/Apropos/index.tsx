@@ -18,17 +18,26 @@ const H1 = styled.h1`
   margin-top: 90px;
   margin-bottom: 70px;
   font-size: 3em;
+  @media (max-width: 768px) {
+    font-size: 2em;
+  }
 `
 
 const H2 = styled.h2`
   margin-top: 50px;
   margin-bottom: 50px;
   font-size: 2em;
+  @media (max-width: 768px) {
+    font-size: 1.5em;
+  }
 `
 
 const Div = styled.div`
   display: flex;
   flex-direction: row;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 const DivPropos = styled.div`
@@ -46,6 +55,10 @@ const DivPropos = styled.div`
   &:hover {
     background-color: #f7f7f7;
   }
+  @media (max-width: 768px) {
+    width: 300px;
+    margin: 0 15px;
+  }
 `
 
 const Img = styled.img`
@@ -56,6 +69,9 @@ const Img = styled.img`
 const P = styled.p`
   font-family: inherit;
   font-size: 1.2em;
+  @media (max-width: 768px) {
+    font-size: 1em;
+  }
 `
 export default function Apropos() {
   return (

@@ -13,12 +13,23 @@ const H1 = styled.h1`
   line-height: 6rem;
   font-size: 6em;
   margin-bottom: 32px;
+  &:hover {
+    line-height: 2rem;
+    font-size: 2em;
+  }
+  @media (max-width: 768px) {
+    line-height: 4rem;
+    font-size: 4em;
+  }
 `
 
 const H2 = styled.h2`
   font-size: 2rem;
   letter-spacing: 1px;
   margin-bottom: 32px;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `
 
 const P = styled.p`
@@ -27,6 +38,9 @@ const P = styled.p`
   font-size: 1.3em;
   margin-top: 16px;
   margin-bottom: 32px;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `
 
 const DivButtonContact = styled.div`
@@ -50,6 +64,9 @@ const ButtonContact = styled.button<{ $github?: boolean }>`
   border: 1px solid black;
   outline: 0;
   margin-right: 24px;
+  @media (max-width: 768px) {
+    font-size: 0.6em;
+  }
 `
 const AncreGit = styled.a`
   color: black;

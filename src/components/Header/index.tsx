@@ -98,6 +98,7 @@ const Ul = styled.ul`
   flex-direction: column;
   font-size: 1.5em;
   @media (max-width: 768px) {
+    padding-right: 40px;
   }
 `
 
@@ -106,6 +107,8 @@ const A = styled.a`
   color: black;
   &:hover {
     color: red;
+  }
+  @media (max-width: 768px) {
   }
 `
 export default function Header() {

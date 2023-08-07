@@ -20,7 +20,8 @@ const StyledGlobalStyle = createGlobalStyle<{ isDarkMode: boolean }>`
       // Ici cette syntaxe revient au même que
         //background-color: $ { ({ props }) => (props.isDarkmode ?  qsdjqkdsq : qsdjqkldq)
         
-        background-color: ${({ isDarkMode }) => (isDarkMode ? '#2F2E41' : '##f7f7f7')};
+        background-color: ${({ isDarkMode }) => (isDarkMode ? 'black' : '##f7f7f7')};
+        color: ${({ isDarkMode }) => (isDarkMode ? 'white' : 'black')};
         font-family: "Lato", sans-serif;
     }
 

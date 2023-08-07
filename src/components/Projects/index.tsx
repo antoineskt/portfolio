@@ -87,9 +87,8 @@ const DivInsightProject = styled.div`
 
 const DivUnderImage = styled.div`
   @media (max-width: 768px) {
-    display: flex;
-    justify-content: start;
-    align-items: start;
+    display: block;
+    word-break: break-all;
   }
 `
 

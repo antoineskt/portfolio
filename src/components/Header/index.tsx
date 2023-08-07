@@ -55,7 +55,6 @@ const Nav = styled.nav<{ $visible: boolean }>`
   visibility: ${({ $visible }) => ($visible === true ? 'visible' : 'hidden')};
   position: fixed;
   width: 300px;
-  background: red;
   right: 0;
   top: 0;
   margin: 0;
@@ -65,7 +64,6 @@ const Nav = styled.nav<{ $visible: boolean }>`
   transition: transform 1s;
   z-index: 10;
   @media (max-width: 768px) {
-    overflow: hidden;
   }
 `
 
@@ -86,6 +84,9 @@ const DivButtonCloseMenu = styled.div`
 `
 const DivUl = styled.div`
   z-index: 10;
+
+  @media (max-width: 768px) {
+  }
 `
 const Ul = styled.ul`
   list-style-type: none;
@@ -96,6 +97,8 @@ const Ul = styled.ul`
   justify-content: center;
   flex-direction: column;
   font-size: 1.5em;
+  @media (max-width: 768px) {
+  }
 `
 
 const A = styled.a`
@@ -158,22 +161,34 @@ export default function Header() {
           <DivUl>
             <Ul>
               <li>
-                <A href="#home">Home</A>
+                <A onClick={() => setVisible(false)} href="#home">
+                  Home
+                </A>
               </li>
               <li>
-                <A href="#apropos">About</A>
+                <A onClick={() => setVisible(false)} href="#apropos">
+                  About
+                </A>
               </li>
               <li>
-                <A href="#services">Services</A>
+                <A onClick={() => setVisible(false)} href="#services">
+                  Services
+                </A>
               </li>
               <li>
-                <A href="#projets">Projets</A>
+                <A onClick={() => setVisible(false)} href="#projets">
+                  Projets
+                </A>
               </li>
               <li>
-                <A href="#competence">Compétences</A>
+                <A onClick={() => setVisible(false)} href="#competence">
+                  Compétences
+                </A>
               </li>
               <li>
-                <A href="#contact">Contact</A>
+                <A onClick={() => setVisible(false)} href="#contact">
+                  Contact
+                </A>
               </li>
             </Ul>
           </DivUl>

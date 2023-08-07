@@ -13,10 +13,6 @@ const H1 = styled.h1`
   line-height: 6rem;
   font-size: 6em;
   margin-bottom: 32px;
-  &:hover {
-    line-height: 2rem;
-    font-size: 2em;
-  }
   @media (max-width: 768px) {
     line-height: 4rem;
     font-size: 4em;

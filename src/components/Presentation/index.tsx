@@ -6,6 +6,9 @@ const SectionPresentation = styled.section`
   margin-left: 70px;
   margin-top: 120px;
   margin-bottom: 20px;
+  @media (max-width: 768px) {
+    margin-left: 30px;
+  }
 `
 
 const H1 = styled.h1`

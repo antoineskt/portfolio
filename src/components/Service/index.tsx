@@ -10,7 +10,11 @@ const SectionService = styled.section`
   margin-top: 70px;
   margin-left: 70px;
   @media (max-width: 768px) {
-    margin-left: 20px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 `
 const H1 = styled.h1`
@@ -40,6 +44,11 @@ const DivOneBloc = styled.div`
   margin: 30px;
   &:hover {
     border: solid 3px black;
+  }
+  @media (max-width: 768px) {
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 `
 

@@ -18,6 +18,7 @@ root.render(
           <Route path="/" element={<Home />} />
 
           <Route path="*" element={<Error />} />
+          <Route path="/portfolio" element={<Home />} />
         </Routes>
       </ThemeProvider>
     </Router>

@@ -11,6 +11,9 @@ const H1 = styled.h1`
   font-size: 3em;
   margin-left: 70px;
   padding-bottom: 40px;
+  @media (max-width: 768px) {
+    margin-left: 40px;
+  }
 `
 const DivTitle = styled.div`
   display: flex;
@@ -23,7 +26,7 @@ const H2 = styled.h2`
 const DivCompetences = styled.div`
   margin-left: 70px;
   @media (max-width: 768px) {
-    margin-left: 20px;
+    margin-left: 0px;
   }
 `
 
@@ -45,6 +48,7 @@ const DivSvgTitle = styled.div`
   }
   @media (max-width: 768px) {
     margin-bottom: 20px;
+    padding-left: 0px;
   }
 `
 export default function Competence() {

@@ -9,8 +9,13 @@ import illuvium from './Images/illuvium.png'
 const SectionProject = styled.section`
   background-color: white;
   margin-top: 70px;
-
   width: 100%;
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 `
 
 const H1 = styled.h1`
@@ -18,14 +23,14 @@ const H1 = styled.h1`
   margin-left: 70px;
   margin-bottom: 50px;
   @media (max-width: 768px) {
-    margin-left: 20px;
+    margin-left: 0;
   }
 `
 
 const DivAllProject = styled.div`
   margin-left: 70px;
   @media (max-width: 768px) {
-    margin-left: 20px;
+    margin-left: 15px;
   }
 `
 
@@ -39,6 +44,8 @@ const A = styled.a`
   display: block;
   border-radius: 10px;
   margin-bottom: 20px;
+  @media (max-width: 768px) {
+  }
 `
 
 const DivImageProject = styled.div`
@@ -87,8 +94,10 @@ const DivInsightProject = styled.div`
 
 const DivUnderImage = styled.div`
   @media (max-width: 768px) {
-    display: block;
-    word-break: break-all;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
   }
 `
 
@@ -100,7 +109,11 @@ const Span = styled.span`
   margin-right: 10px;
   box-shadow: 0 1px 1px 1px hotpink;
   @media (max-width: 768px) {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    margin-right: 30px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 7px;
   }
 `
 

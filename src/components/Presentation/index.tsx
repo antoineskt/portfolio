@@ -82,7 +82,10 @@ export default function Presentation() {
         Autoditacte de 26ans, je suis passionné par <br /> le développement web, l'UI/UX et <br /> l'accessibilité
       </P>
       <DivButtonContact>
-        <ButtonContact>Me contacter</ButtonContact>
+        <a href="#contact">
+          <ButtonContact>Me contacter</ButtonContact>
+        </a>
+
         <ButtonContact $github>
           <AncreGit href="https://github.com/antoineskt">
             <svg

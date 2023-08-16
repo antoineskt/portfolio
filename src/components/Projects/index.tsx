@@ -5,6 +5,7 @@ import flowScreenOk from './Images/FlowScreenOk.png'
 import agendascreen from './Images/agendascreen.png'
 import books from './Images/books.png'
 import illuvium from './Images/illuvium.png'
+import itrack from './Images/itrack.png'
 
 const SectionProject = styled.section`
   background-color: white;
@@ -68,9 +69,7 @@ const Img = styled.img`
   transition: transform 0.5s;
   &:hover {
     filter: blur(0.1px);
-    -ms-transform: scale(1.05); /* IE 9 */
-    -webkit-transform: scale(1.05); /* Safari 3-8 */
-    transform: scale(1.05);
+
     border: 4px solid #5dfff2;
   }
   @media (max-width: 768px) {
@@ -117,11 +116,38 @@ const Span = styled.span`
   }
 `
 
+const H2black = styled.h2`
+  color: black;
+`
+
+const DivBlack = styled.div`
+  color: black;
+`
+
 export default function Project() {
   return (
     <SectionProject id="projets">
       <H1>Mes projects</H1>
       <DivAllProject>
+        <DivOneProject>
+          <A target="_blank" href="https://github.com/antoineskt/itrack">
+            <DivImageProject>
+              <Img src={itrack} alt="itrack" />
+              <DivInsightProject>
+                <H2black>iTrack</H2black>
+                <DivBlack>Next App pour une application Shopify</DivBlack>
+              </DivInsightProject>
+            </DivImageProject>
+          </A>
+          <DivUnderImage>
+            <a target="_blank" href="https://github.com/antoineskt/itrack" rel="noreferrer">
+              <Span>Github</Span>
+            </a>
+            <Span>Next</Span>
+            <Span>Styled Components</Span>
+          </DivUnderImage>
+        </DivOneProject>
+
         <DivOneProject>
           <A target="_blank" href="https://github.com/antoineskt/Weekly-Agenda.git">
             <DivImageProject>

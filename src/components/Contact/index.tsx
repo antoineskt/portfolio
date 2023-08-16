@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import styled from 'styled-components'
 
 const SectionContact = styled.section`
@@ -24,6 +25,7 @@ export default function Contact() {
   return (
     <SectionContact id="contact">
       <H1>Contact</H1>
+
       <Div>
         <A target="_blank" href="https://github.com/antoineskt">
           <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">

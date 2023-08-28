@@ -98,7 +98,6 @@ const Ul = styled.ul`
   flex-direction: column;
   font-size: 1.5em;
   @media (max-width: 768px) {
-    padding-right: 40px;
   }
 `
 

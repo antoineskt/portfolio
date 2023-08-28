@@ -49,6 +49,9 @@ const DivOneBloc = styled.div`
     margin: 0;
     padding: 0;
     width: 100%;
+    &:hover {
+      display: none;
+    }
   }
 `
 
@@ -69,7 +72,7 @@ export default function Service() {
           </div>
           <H2>Application webs</H2>
           <p>
-            Développement d'application webs responsives et <br /> performantes
+            Développement d'applications webs responsives et <br /> performantes
           </p>
         </DivOneBloc>
         <DivOneBloc>
@@ -78,7 +81,7 @@ export default function Service() {
           </div>
           <H2>Application mobiles</H2>
           <p>
-            Développement d'application mobiles cross plateforme <br /> Ios et Android avec <br /> React Native{' '}
+            Développement d'applications mobiles cross plateforme <br /> Ios et Android avec <br /> React Native{' '}
           </p>
         </DivOneBloc>
         <DivOneBloc>
@@ -87,7 +90,7 @@ export default function Service() {
           </div>
           <H2>Shopify</H2>
           <p>
-            Création d'applications et extension de thème <br />
+            Création d'applications et extensions de thèmes <br />
             Shopify
           </p>
         </DivOneBloc>

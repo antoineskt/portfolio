@@ -42,7 +42,7 @@ export default function Project() {
       <H1>Mes projets</H1>
       <DivAllProject>
         <CardOneProject
-          githubLink="https://github.com/antoineskt/itrack"
+          githubLink="https://i-track-one.vercel.app/"
           imageUrl={itrack}
           altTitle="itrack"
           title="iTrack"
@@ -52,7 +52,7 @@ export default function Project() {
         />
 
         <CardOneProject
-          githubLink="https://github.com/antoineskt/Weekly-Agenda.git"
+          githubLink="https://weeklyagenda.netlify.app/"
           imageUrl={agendascreen}
           altTitle="agenda"
           title="Agenda"
@@ -71,7 +71,7 @@ export default function Project() {
         />
 
         <CardOneProject
-          githubLink="https://github.com/antoineskt/Booksearch"
+          githubLink="https://librairie.netlify.app/"
           imageUrl={books}
           altTitle="books"
           title="BookSearch"

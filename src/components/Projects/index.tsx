@@ -41,7 +41,7 @@ export default function Project() {
   const { t } = useTranslation()
   return (
     <SectionProject id="projets">
-      <H1>Mes projets</H1>
+      <H1>{t('projects.title')}</H1>
       <DivAllProject>
         <CardOneProject
           githubLink="https://i-track-one.vercel.app/"

@@ -1,6 +1,7 @@
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable react/no-unescaped-entities */
 import styled from 'styled-components'
+import { useTranslation } from 'react-i18next'
 
 const SectionPresentation = styled.section`
   margin-left: 70px;
@@ -71,19 +72,18 @@ const AncreGit = styled.a`
   color: black;
 `
 export default function Presentation() {
+  const { t } = useTranslation()
   return (
     <SectionPresentation id="home">
       <H1>
         Antoine
         <br /> Billet
       </H1>
-      <H2>Développeur Front-end.</H2>
-      <P>
-        Autoditacte de 26ans, je suis passionné par <br /> le développement web, l'UI/UX et <br /> l'accessibilité
-      </P>
+      <H2>{t('title')}</H2>
+      <P>{t('description')}</P>
       <DivButtonContact>
         <a href="#contact">
-          <ButtonContact>Me contacter</ButtonContact>
+          <ButtonContact>{t('contactMe')}</ButtonContact>
         </a>
 
         <ButtonContact $github>

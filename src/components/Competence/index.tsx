@@ -1,6 +1,7 @@
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable react/no-unescaped-entities */
 import styled from 'styled-components'
+import { useTranslation } from 'react-i18next'
 
 const SectionCompetence = styled.section`
   padding-top: 30px;
@@ -52,16 +53,17 @@ const DivSvgTitle = styled.div`
   }
 `
 export default function Competence() {
+  const { t } = useTranslation()
   return (
     <SectionCompetence id="competences">
-      <H1>Mes compétences</H1>
+      <H1>{t('skills.title')}</H1>
 
       <DivCompetences>
         <DivTitle>
           <svg height="35" viewBox="0 0 512 512" width="35" xmlns="http://www.w3.org/2000/svg">
             <path d="m432 32h-352a64.07 64.07 0 0 0 -64 64v320a64.07 64.07 0 0 0 64 64h352a64.07 64.07 0 0 0 64-64v-320a64.07 64.07 0 0 0 -64-64zm-336 224a16 16 0 0 1 -10-28.49l64.39-51.51-64.39-51.51a16 16 0 1 1 20-25l80 64a16 16 0 0 1 0 25l-80 64a16 16 0 0 1 -10 3.51zm160 0h-64a16 16 0 0 1 0-32h64a16 16 0 0 1 0 32z" />
           </svg>
-          <H2>J'ai pu travailler avec</H2>
+          <H2>{t('skills.titleTwo')}</H2>
         </DivTitle>
         <DivAllSvgTitle>
           <DivSvgTitle>
@@ -265,7 +267,7 @@ export default function Competence() {
           <svg height="35" viewBox="0 0 512 512" width="35" xmlns="http://www.w3.org/2000/svg">
             <path d="m432 32h-352a64.07 64.07 0 0 0 -64 64v320a64.07 64.07 0 0 0 64 64h352a64.07 64.07 0 0 0 64-64v-320a64.07 64.07 0 0 0 -64-64zm-336 224a16 16 0 0 1 -10-28.49l64.39-51.51-64.39-51.51a16 16 0 1 1 20-25l80 64a16 16 0 0 1 0 25l-80 64a16 16 0 0 1 -10 3.51zm160 0h-64a16 16 0 0 1 0-32h64a16 16 0 0 1 0 32z" />
           </svg>
-          <H2>J'utilise ces outils</H2>
+          <H2>{t('skills.titleThree')}</H2>
         </DivTitle>
 
         <DivAllSvgTitle>

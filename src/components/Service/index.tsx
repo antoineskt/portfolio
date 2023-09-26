@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import phone from './phone.svg'
 import code from './code.svg'
 import website from './website.svg'
+import { useTranslation } from 'react-i18next'
 
 const SectionService = styled.section`
   background-color: f7f7f7;
@@ -62,37 +63,31 @@ const Img = styled.img`
 `
 
 export default function Service() {
+  const { t } = useTranslation()
   return (
     <SectionService id="services">
-      <H1>Mes services</H1>
+      <H1>{t('services.title')}</H1>
       <DivThreeBox>
         <DivOneBloc>
           <div>
             <Img src={website} alt="website" />
           </div>
-          <H2>Application webs</H2>
-          <p>
-            Développement d'applications webs responsives et <br /> performantes
-          </p>
+          <H2>{t('services.web.title')}</H2>
+          <p>{t('services.web.description')}</p>
         </DivOneBloc>
         <DivOneBloc>
           <div>
             <Img src={phone} alt="téléphone" />
           </div>
-          <H2>Application mobiles</H2>
-          <p>
-            Développement d'applications mobiles cross plateforme <br /> Ios et Android avec <br /> React Native{' '}
-          </p>
+          <H2>{t('services.mobiles.title')}</H2>
+          <p>{t('services.mobiles.description')}</p>
         </DivOneBloc>
         <DivOneBloc>
           <div>
             <Img src={code} alt="code" />
           </div>
           <H2>Shopify</H2>
-          <p>
-            Création d'applications et extensions de thèmes <br />
-            Shopify
-          </p>
+          <p>{t('services.shopify.description')}</p>
         </DivOneBloc>
       </DivThreeBox>
     </SectionService>

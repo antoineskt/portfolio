@@ -7,6 +7,7 @@ import books from './Images/books.png'
 import illuvium from './Images/illuvium.png'
 import itrack from './Images/itrack.png'
 import CardOneProject from '../CardOneProject'
+import { useTranslation } from 'react-i18next'
 
 const SectionProject = styled.section`
   background-color: white;
@@ -37,6 +38,7 @@ const DivAllProject = styled.div`
 `
 
 export default function Project() {
+  const { t } = useTranslation()
   return (
     <SectionProject id="projets">
       <H1>Mes projets</H1>
@@ -46,7 +48,7 @@ export default function Project() {
           imageUrl={itrack}
           altTitle="itrack"
           title="iTrack"
-          description="Next App pour une application Shopify"
+          description={t('projects.descriptionOne')}
           technoUsed={['Next', 'Styled Components']}
           colorReverse={true}
         />
@@ -56,7 +58,7 @@ export default function Project() {
           imageUrl={agendascreen}
           altTitle="agenda"
           title="Agenda"
-          description="Agenda de semaine en temps réel pour suivre ses objectifs simplement"
+          description={t('projects.descriptionTwo')}
           technoUsed={['React', 'Styled Components']}
           colorReverse={false}
         />
@@ -65,7 +67,7 @@ export default function Project() {
           imageUrl={flowScreenOk}
           altTitle="agenda"
           title="Habit Tracker"
-          description="Application mobile en React Native. L'app permet de s'identifier et de suivre ses objectifs en temps reél"
+          description={t('projects.descriptionThird')}
           technoUsed={['React Native ', 'Express', 'Sequelize', 'mySql', 'Figma']}
           colorReverse={false}
         />
@@ -75,7 +77,7 @@ export default function Project() {
           imageUrl={books}
           altTitle="books"
           title="BookSearch"
-          description="Utilisation d'une API de recherche de livre"
+          description={t('projects.descriptionFourth')}
           technoUsed={['JavaScript', 'Html Css', 'API']}
           colorReverse={false}
         />
@@ -85,7 +87,7 @@ export default function Project() {
           imageUrl={illuvium}
           altTitle="books"
           title="Maquette"
-          description="Reproduction simple d'une page vitrine d'un site en html css"
+          description={t('projects.descriptionFivth')}
           technoUsed={['HTML', 'CSS']}
           colorReverse={false}
         />

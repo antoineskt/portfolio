@@ -1,0 +1,71 @@
+{
+  "title": "Développeur Front-end.",
+  "description": "Autoditacte de 26ans, je suis passionné par le développement web, l'UI/UX et l'accessibilité",
+  "contactMe": "Me contacter",
+  "resume": "CV",
+  "translateTo": {
+    "english": "Translate to english",
+    "french": "Traduire en français"
+  },
+  "projects": {
+    "title": "Mes projets",
+    "descriptionOne": "Next App pour une application Shopify",
+    "descriptionTwo": "Agenda de semaine en temps réel pour suivre ses objectifs simplement",
+    "descriptionThird": "Application mobile en React Native. L'app permet de s'identifier et de suivre ses objectifs en temps reél",
+    "descriptionFourth": "Utilisation d'une API de recherche de livre",
+    "descriptionFivth": "Reproduction simple d'une page vitrine d'un site en html css"
+  },
+  "skills": {
+    "title": "Mes compétences",
+    "titleTwo": "J'ai pu travailler avec",
+    "titleThree": "J'utilise ces outils"
+  },
+  "knowMore": "En savoir plus",
+  "aboutSomething": "à propos de",
+  "seeWebsite": "Voir le site",
+  "seeRepo": "Voir sur GitHub",
+  "seeCasestudy": "Lire l'étude",
+  "viewProject": "Voir le projet",
+  "workedWith": "J'ai pu travailler avec",
+  "workedWithServices": "J'ai utilisé ces services",
+  "workedWithTools": "Les outils que j'utilise",
+  "code": {
+    "title": "Statistiques GitHub",
+    "mostActivePR": "PR le plus actif",
+    "userStats": "Statistiques",
+    "languagesStats": "% écrit par langages",
+    "someContributions": "Quelques contributions open-source"
+  },
+  "experience": "Expériences professionnelles",
+  "about": {
+    "title": "À propos de moi",
+    "description": "Depuis maintenant plus de 3 ans, je développe et crée des sites webs. J'adore coder en React, même si je suis prêt à me plonger dans n'importe quel langage sans problème.",
+    "h2": "Application mobile & Shopify",
+    "descriptionTwo": "Je code également des applications mobiles en React native et des applications webs et thèmes/sites sur Shopify."
+  },
+  "latestPost": "Mon dernier article",
+  "readArticle": "Lire l'article",
+  "published": "Publié le",
+  "builtWith": "Développé avec",
+  "hostedOn": "et hébergé sur",
+  "footNote": "<span>Ce site a été réalisé à la main et ne collecte aucune donnée. Vous pouvez trouver le code source sur <a href='https://github.com/KeziahMoselle/keziahmoselle.fr'>GitHub</a>. Merci de votre visite, passez une bonne journée ! 👋</span>",
+  "services": {
+    "title": "Mes services",
+    "web": {
+      "title": "Application webs",
+      "description": "Développement d'applications webs responsives et performantes"
+    },
+    "mobiles": {
+      "title": "Application mobiles",
+      "description": "Développement d'applications mobiles cross plateformeIos et Android avec React Native"
+    },
+    "shopify": {
+      "title": "Shopify",
+      "description": "Création d'applications et extensions de thèmes Shopify"
+    }
+  },
+  "socials": {
+    "title": "Réseaux sociaux et liens",
+    "description": "Vous pouvez me retrouver sur ces plateformes 👇"
+  }
+}

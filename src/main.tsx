@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Error from './components/Error'
 import GlobalStyle from './utils/style/GlobalStyle'
 import { ThemeProvider } from './utils/context'
+import './Lang/i18n' // Importez la configuration d'i18next
 
 const container = document.getElementById('root')
 const root = createRoot(container!)

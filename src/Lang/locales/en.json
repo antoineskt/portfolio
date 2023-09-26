@@ -20,24 +20,7 @@
     "titleTwo": "I was able to work with",
     "titleThree": "I use these tools"
   },
-  "knowMore": "Read more",
-  "aboutSomething": "about",
-  "seeWebsite": "See on the website",
-  "seeRepo": "See on GitHub",
-  "seeCasestudy": "Read more",
-  "viewProject": "See project",
 
-  "workedWith": "Worked with these technologies",
-  "workedWithServices": "I've worked with these services",
-  "workedWithTools": "The tools I use",
-  "code": {
-    "title": "GitHub statistics",
-    "mostActivePR": "Most active PR",
-    "userStats": "Stats",
-    "languagesStats": "% of bytes written by languages",
-    "someContributions": "Some OSS contributions"
-  },
-  "experience": "Work experience",
   "about": {
     "title": "About Me",
     "description": "I've been developing and creating websites for over 3 years now. I love coding in React, although i'm ready to dive into any language without a problem.",
@@ -45,12 +28,6 @@
     "descriptionTwo": "I also code mobile applications in native React and web applications and themes/sites on Shopify."
   },
 
-  "latestPost": "My last blog post",
-  "readArticle": "Read post",
-  "published": "published on",
-  "builtWith": "Built with",
-  "hostedOn": "and hosted on",
-  "footNote": "<span>This website has been made by hand and does not collect anything. You can find the source code on <a href='https://github.com/KeziahMoselle/keziahmoselle.fr'>GitHub</a>. Thank you for stopping by, have a great day ! 👋</span>",
   "services": {
     "title": "My services",
     "web": {
@@ -65,9 +42,5 @@
       "title": "Shopify",
       "description": "Shopify applications and theme extensions"
     }
-  },
-  "socials": {
-    "title": "Social networks & Links",
-    "description": "You can find me on these platforms 👇"
   }
 }
